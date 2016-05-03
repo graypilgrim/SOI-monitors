@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -Werror --std=c++11 -Wpedantic -lpthread -lstdc++
+CXXFLAGS = -Wall -Werror --std=c++11 -pedantic -lpthread -lstdc++
 LINKFLAGS = --std=c++11 -lpthread -lstdc++
 
 lib_SOURCES = \
