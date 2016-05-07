@@ -5,6 +5,8 @@
 #include "BufferB.h"
 #include "BufferC.h"
 
+#define DELAY 9*1000
+
 void* Producer(void* buffer);
 
 void* Consumer(void* msg);

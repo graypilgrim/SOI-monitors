@@ -9,7 +9,7 @@ void* Producer(void* buffer)
     {
         buf->push(input);
 
-        usleep(1000);
+        usleep(DELAY);
     }
 }
 
@@ -36,6 +36,6 @@ void* Consumer(void* msg)
             printf("\t");
         printf("Consumer%d picked %d\n", index, result);
 
-        usleep(1000);
+        usleep(DELAY);
     }
 }
