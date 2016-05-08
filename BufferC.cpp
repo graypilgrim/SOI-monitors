@@ -36,3 +36,8 @@ void BufferC::BufferBEvenOrFull()
     {
         signal(evenOrFullB);
     }
+
+inline bool BufferC::bFullnessOrParity()
+{
+    return (bufferB.Full() || bufferB.getSize() % 2 == 0);
+}

@@ -5,7 +5,7 @@
 #include "BufferB.h"
 #include "BufferC.h"
 
-#define DELAY 9*1000
+#define DELAY 40*1000
 
 void* Producer(void* buffer);
 

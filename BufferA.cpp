@@ -37,3 +37,8 @@ void BufferA::BufferBOdd()
     {
         signal(oddB);
     }
+
+inline bool BufferA::bOddParity()
+{
+    return (bufferB.getSize() % 2 != 0);
+}

@@ -40,8 +40,8 @@ int main()
 
     while(true)
     {
-        printf("\t\t\t\t\t\t\t\t\t%d %d %d\n", bufferA.getSize(), bufferB.getSize(),bufferC.getSize());
-        usleep(1000);
+        printf("%d %d %d\n", bufferA.getSize(), bufferB.getSize(),bufferC.getSize());
+        usleep(DELAY);
     }
 
     for(int i = 0; i < ENTIETIES_NUMBER; ++i)

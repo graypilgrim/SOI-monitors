@@ -16,10 +16,7 @@ public:
 
 
 private:
-    inline bool bOddParity()
-    {
-        return (bufferB.getSize() % 2 != 0);
-    }
+    inline bool bOddParity();
 
     Condition oddB;
     Monitor& bufferB;

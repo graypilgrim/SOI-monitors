@@ -16,11 +16,7 @@ public:
 
 
 private:
-    inline bool bFullnessOrParity()
-    {
-        return (bufferB.Full() || bufferB.getSize() % 2 == 0);
-    }
-
+    inline bool bFullnessOrParity();
     Condition evenOrFullB;
     Monitor& bufferB;
 };
