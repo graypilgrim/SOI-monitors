@@ -39,5 +39,8 @@ void BufferC::BufferBEvenOrFull()
 
 inline bool BufferC::bFullnessOrParity()
 {
-    return (bufferB.Full() || bufferB.getSize() % 2 == 0);
+    bufferB.enter();
+    bool result = bufferB.Full() || bufferB.getSize() % 2 == 0;
+    bufferB.leave();
+    return result;
 }

@@ -40,5 +40,8 @@ void BufferA::BufferBOdd()
 
 inline bool BufferA::bOddParity()
 {
-    return (bufferB.getSize() % 2 != 0);
+    bufferB.enter();
+    bool result = bufferB.getSize() % 2 != 0;
+    bufferB.leave();
+    return result;
 }
