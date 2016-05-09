@@ -35,7 +35,7 @@ int main()
     {
         cd[i].buffers = buffers;
         cd[i].index = i;
-        pthread_create(&threads[2 + i], NULL, Consumer, (void *)&cd[i]);
+        pthread_create(&threads[3 + i], NULL, Consumer, (void *)&cd[i]);
     }
 
     while(true)
